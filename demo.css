@@ -1,0 +1,302 @@
+body{
+    margin:0%;
+    background-color: grey;
+}
+.img{
+    display: none;
+    width:80px;
+    height:50px;
+    
+}
+@media screen and (max-width: 800px) {
+    .img{ 
+        margin-top: -45px;
+        float: right;
+        display: block;
+        width:60px;
+        height:60px;
+     
+     
+    }
+  }
+.demo{
+    margin-top: -60px;
+    width:100%;
+    height:60px;
+    background-color: rgb(161, 157, 157);
+}
+.nav{
+ margin-left: 500px;
+
+}
+li{
+    margin-top:20px;
+    margin-left: 100px;
+    display: inline-flex;
+    color:white;
+}
+li a{
+    color:white;
+    text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+    .demo{ 
+        display: none;
+      
+      width:100%;
+      height:400px;
+     
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .nav{ 
+      display: block;
+      margin-left: -0px;
+      width:100%;
+      height:400px;
+     
+    }
+  }
+  @media screen and (max-width: 800px) {
+    li a{ 
+      margin-left: 110px;
+      padding-top: 40px;
+     
+    }
+  }
+  header{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+header s{
+    color:rgb(236, 23, 59);
+    font-family: bold;
+    font-size: 30px;
+   }
+   header h{
+       color:white;
+       font-family: bold;
+       font-size: 25px;
+      }
+      .res{
+        margin-left:350px;
+        height: 550px;
+      }
+      @media screen and (max-width: 800px) {
+        .res{ 
+        
+         margin-left: 50px;
+          padding-top: 40px;
+         
+        }
+      }
+      .tom{
+        margin: -200px 0px 0px 750px;
+      }
+      @media screen and (max-width: 800px) {
+        .tom{
+        
+          margin-top: 30px;
+         margin-left: 100px;
+         font-size: 15px;
+        }
+      }
+      .about p{
+        margin-top: 100px;
+        border-bottom: 1px solid rgb(228, 23, 57);
+        color:white;
+        font-size: 40px;
+        font-family:  Bold;
+      }
+      
+      .s{
+        margin-top: 90px;
+        margin-left: 300px;
+        text-decoration: none;
+        color: white;
+      }
+      l{
+        padding-top: 100px;
+        font-size: 20px;
+        color:white;
+      }
+      .m{
+        margin: -150px 0px 0px 700px;
+        text-decoration: none;
+        color: white;
+      }
+      o{
+        font-size: 20px;
+        color:white;
+      }
+      @media screen and (max-width: 800px) {
+        .s,l{
+        
+          margin-top: 20px;
+         margin-left: 50px;
+         font-size: 15px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .m,o{
+        
+          margin-top: 60px;
+         margin-left: 50px;
+         font-size: 15px;
+        }
+      }
+      .sav{
+        height: 13rem;
+       }
+       .project c{
+        border-width: 100%;
+        border-bottom: 1px solid rgb(228, 23, 57);
+        color:white;
+        font-size: 40px;
+        font-family:  Bold;
+      }
+      table{
+        margin-top: 30px;
+        color:white;
+        text-align: center;
+        width:100%;
+      }
+      table th{
+        background-color: rgb(82, 79, 79);
+        font-size: 20px;
+        height: 40px;
+      }
+      @media screen and (max-width: 800px) {
+        table{
+        
+         margin-top: 30px;
+         margin-left: 0px;
+         font-size: 15px;
+        }
+      }
+      .contact{
+        margin-top: 00px;
+      
+        color:white;
+        font-size: 40px;
+        font-family:  Bold;
+      }
+      .log{
+        margin-top: 50px;
+        margin-left: 300px;
+        color:rgb(226, 31, 63);
+      }
+      .log a{
+        
+        color:white;
+      }
+    
+      .fa-envelope{
+        margin-top: 130px;
+        margin-left: 50px;
+       font-size: 20px;
+       color: rgb(223, 24, 57);
+      }
+      .fa-address-book{
+        margin-top: 20px;
+        margin-left: 50px;
+       font-size: 20px;
+       color: rgb(223, 24, 57);
+      }
+      .fa-whatsapp{
+        margin-top: 20px;
+        margin-left: 30px;
+       font-size: 20px;
+       color: rgb(136, 133, 133);
+      }
+      .fa-instagram{
+        margin-left: 50px;
+       font-size: 20px;
+       color: rgb(136, 133, 133);
+      }
+      input[type='submit']
+      {
+        width: 200px;
+        height: 50px;
+        margin-left: 50px;
+        border: none;
+        color: white;
+        margin-top: 5px;
+        background-color: rgb(223, 24, 57);
+      }
+      @media screen and (max-width: 800px) {
+        .log{
+        margin-top: -20px;
+        margin-left: 100px;
+       
+        }
+      }
+      .dom{
+        margin-left: 700px;
+        margin-top: -170px;
+      }
+    input[type='text']
+  {
+    width:400px;
+    height: 40px;
+    border:none;
+    opacity: 1px;
+    cursor: pointer;
+    background-color: rgb(59, 59, 59);
+  }
+  textarea{
+    width:400px;
+    height: 40px;
+    border:none;
+    opacity: 1px;
+    cursor: pointer;
+    background-color: rgb(59, 59, 59);
+  }
+  button{
+   width: 200px;
+    height: 50px;
+  
+    border: none;
+    color: white;
+    margin-top: 20px;
+    background-color: rgb(223, 24, 57);
+  }
+      @media screen and (max-width: 800px) {
+        .dom{
+        margin-top: 80px;
+        margin-left: 50px;
+       
+        }
+      }
+      footer {
+        margin-top: 460px;
+        background-color: rgb(92, 92, 92);
+        color:white;
+        text-align: center;
+        
+       
+      }
+      .fa-copyright{
+        font-size: 20px;
+       color: white;
+      
+      }
+      .fa-heart{
+        font-size: 20px;
+        color: rgb(223, 24, 57);
+      }
+      @media screen and (max-width: 600px) {
+        footer {
+         
+          background-color: black;
+          text-align: center;
+          width: 100%;
+          height: 40px;
+          padding-bottom: 20px;
+          margin-top: 550px;
+         
+          
+        }
+      }
