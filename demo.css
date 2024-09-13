@@ -8,7 +8,7 @@ body{
     height:50px;
     
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 100%) {
     .img{ 
         margin-top: -45px;
         float: right;
@@ -39,7 +39,7 @@ li a{
     color:white;
     text-decoration: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 100%) {
     .demo{ 
         display: none;
       
@@ -48,7 +48,7 @@ li a{
      
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 100%) {
     .nav{ 
       display: block;
       margin-left: -0px;
@@ -57,7 +57,7 @@ li a{
      
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 100%) {
     li a{ 
       margin-left: 110px;
       padding-top: 40px;
@@ -84,7 +84,7 @@ header s{
         margin-left:350px;
         height: 550px;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         .res{ 
         
          margin-left: 50px;
@@ -95,7 +95,7 @@ header s{
       .tom{
         margin: -200px 0px 0px 750px;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         .tom{
         
           margin-top: 30px;
@@ -131,7 +131,7 @@ header s{
         font-size: 20px;
         color:white;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         .s,l{
         
           margin-top: 20px;
@@ -139,7 +139,7 @@ header s{
          font-size: 15px;
         }
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         .m,o{
         
           margin-top: 60px;
@@ -168,7 +168,7 @@ header s{
         font-size: 20px;
         height: 40px;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         table{
         
          margin-top: 30px;
@@ -226,7 +226,7 @@ header s{
         margin-top: 5px;
         background-color: rgb(223, 24, 57);
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         .log{
         margin-top: -20px;
         margin-left: 100px;
@@ -263,7 +263,7 @@ header s{
     margin-top: 20px;
     background-color: rgb(223, 24, 57);
   }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 100%) {
         .dom{
         margin-top: 80px;
         margin-left: 50px;
@@ -287,7 +287,7 @@ header s{
         font-size: 20px;
         color: rgb(223, 24, 57);
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 100%) {
         footer {
          
           background-color: black;
