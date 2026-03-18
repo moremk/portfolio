@@ -16,6 +16,7 @@ header{
   justify-content:space-between;
   padding:20px 8%;
   align-items:center;
+  position:relative;
 }
 
 .logo{
@@ -24,26 +25,49 @@ header{
   color:#00d4ff;
 }
 
+/* NAV */
+nav{
+  display:flex;
+}
+
 nav a{
   margin-left:20px;
   color:white;
   text-decoration:none;
   transition:0.3s;
 }
-nav a:hover{color:#00d4ff}
+
+nav a:hover{
+  color:#00d4ff;
+}
+
+/* HAMBURGER MENU */
+.menu-toggle{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
 
 /* HERO */
 .hero{
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
   padding:60px 8%;
   flex-wrap:wrap;
+  gap:40px;
 }
 
+/* IMAGE LEFT */
 .hero img{
   width:260px;
   border-radius:20px;
+  order:1;   /* LEFT SIDE */
+}
+
+.hero-text{
+  max-width:500px;
+  order:2;
 }
 
 .hero-text h1{
@@ -144,8 +168,42 @@ footer{
 
 /* MOBILE */
 @media(max-width:768px){
+
+  /* SHOW MENU ICON */
+  .menu-toggle{
+    display:block;
+  }
+
+  /* HIDE NAV INITIALLY */
+  nav{
+    position:absolute;
+    top:70px;
+    right:0;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+  }
+
+  /* WHEN ACTIVE */
+  nav.active{
+    display:flex;
+  }
+
+  nav a{
+    padding:15px 0;
+    margin:0;
+    border-bottom:1px solid #333;
+  }
+
+  /* HERO STACK */
   .hero{
     flex-direction:column;
     text-align:center;
+  }
+
+  .hero img{
+    order:-1; /* IMAGE TOP ON MOBILE */
   }
 }
