@@ -14,7 +14,12 @@
 <!-- HEADER -->
 <header>
   <div class="logo">Mahesh</div>
-  <nav>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <nav id="nav-menu">
     <a href="#">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -26,12 +31,13 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img src="T.png" alt="Profile">
+
   <div class="hero-text">
     <h1>Hi, I'm <span>Mahesh More</span></h1>
     <p>Salesforce Developer | Software Engineer</p>
     <p>From Maharashtra</p>
   </div>
-  <img src="T.png" alt="Profile">
 </section>
 
 <!-- ABOUT -->
@@ -151,6 +157,13 @@
 <footer>
   © 2026 Mahesh More ❤️ All Rights Reserved
 </footer>
+<script>
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
 
+toggle.onclick = () => {
+  menu.classList.toggle("active");
+};
+</script>
 </body>
 </html>
