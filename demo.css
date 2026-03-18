@@ -3,6 +3,7 @@
   padding:0;
   box-sizing:border-box;
   font-family:'Segoe UI',sans-serif;
+  scroll-behavior:smooth;
 }
 
 body{
@@ -14,9 +15,13 @@ body{
 header{
   display:flex;
   justify-content:space-between;
-  padding:20px 8%;
+  padding:15px 8%;
   align-items:center;
-  position:relative;
+  position:sticky;
+  top:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
 }
 
 .logo{
@@ -28,23 +33,42 @@ header{
 /* NAV */
 nav{
   display:flex;
+  align-items:center;
+  transition:0.3s;
 }
 
 nav a{
   margin-left:20px;
   color:white;
   text-decoration:none;
+  position:relative;
   transition:0.3s;
+}
+
+/* NAV HOVER EFFECT */
+nav a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  bottom:-5px;
+  left:0;
+  background:#00d4ff;
+  transition:0.3s;
+}
+
+nav a:hover::after{
+  width:100%;
 }
 
 nav a:hover{
   color:#00d4ff;
 }
 
-/* HAMBURGER MENU */
+/* HAMBURGER */
 .menu-toggle{
   display:none;
-  font-size:24px;
+  font-size:26px;
   cursor:pointer;
 }
 
@@ -54,15 +78,16 @@ nav a:hover{
   align-items:center;
   justify-content:space-between;
   padding:60px 8%;
-  flex-wrap:wrap;
   gap:40px;
+  flex-wrap:wrap;
 }
 
 /* IMAGE LEFT */
 .hero img{
   width:260px;
   border-radius:20px;
-  order:1;   /* LEFT SIDE */
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  order:1;
 }
 
 .hero-text{
@@ -106,7 +131,8 @@ nav a:hover{
 }
 
 .card:hover{
-  transform:translateY(-10px);
+  transform:translateY(-10px) scale(1.02);
+  background:rgba(255,255,255,0.12);
 }
 
 /* PROJECT */
@@ -133,8 +159,13 @@ ul li{
 
 .social a{
   margin:10px;
-  font-size:20px;
+  font-size:22px;
   color:#00d4ff;
+  transition:0.3s;
+}
+
+.social a:hover{
+  transform:scale(1.2);
 }
 
 /* FORM */
@@ -148,6 +179,8 @@ ul li{
   margin:10px 0;
   border:none;
   border-radius:8px;
+  background:#1e2a32;
+  color:white;
 }
 
 .form button{
@@ -156,6 +189,11 @@ ul li{
   border:none;
   border-radius:8px;
   cursor:pointer;
+  transition:0.3s;
+}
+
+.form button:hover{
+  background:#00aacc;
 }
 
 /* FOOTER */
@@ -169,12 +207,11 @@ footer{
 /* MOBILE */
 @media(max-width:768px){
 
-  /* SHOW MENU ICON */
   .menu-toggle{
     display:block;
   }
 
-  /* HIDE NAV INITIALLY */
+  /* NAV DROPDOWN */
   nav{
     position:absolute;
     top:70px;
@@ -184,9 +221,9 @@ footer{
     flex-direction:column;
     text-align:center;
     display:none;
+    animation:slideDown 0.3s ease;
   }
 
-  /* WHEN ACTIVE */
   nav.active{
     display:flex;
   }
@@ -197,13 +234,25 @@ footer{
     border-bottom:1px solid #333;
   }
 
-  /* HERO STACK */
+  /* HERO MOBILE */
   .hero{
     flex-direction:column;
     text-align:center;
   }
 
   .hero img{
-    order:-1; /* IMAGE TOP ON MOBILE */
+    order:-1;
+  }
+}
+
+/* ANIMATION */
+@keyframes slideDown{
+  from{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
   }
 }
